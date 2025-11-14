@@ -14,33 +14,44 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        lp: Long-Press {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Long Press";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-         &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y  &kp U          &kp I            &kp O    &kp P
-         &kp A  &kp S  &kp D             &kp F      &kp G    &kp H  &kp J          &kp K            &kp L    &kp SEMI
-&kp TAB  &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N  &kp M          &kp COMMA        &kp DOT  &kp SLASH  &kp ENTER
-                       &kp LEFT_CONTROL  &kp SPACE  &mo 1    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
+         &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U          &kp I              &kp O            &kp P
+         &lp LEFT_ALT A  &lp LEFT_GUI S  &lp LEFT_SHIFT D  &lp LCTRL F  &kp G    &kp H  &lp RCTRL J    &lp RIGHT_SHIFT K  &lp RIGHT_GUI L  &lp RIGHT_ALT SEMI
+&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp N  &kp M          &kp COMMA          &kp DOT          &kp SLASH           &kp ENTER
+                                         &kp LEFT_CONTROL  &kp SPACE    &mo 1    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
         nav_num {
             bindings = <
-             &kp F13       &kp NUMBER_2  &kp UP_ARROW            &kp NUMBER_7             &kp RA(NUMBER_4)    &kp RA(EQUAL)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-             &kp ESCAPE    &kp LEFT      &kp DOWN                &kp RIGHT                &kp RA(NUMBER_5)    &kp RA(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp NUMBER_6
-&kp LA(TAB)  &kp LEFT_WIN  &kp NUBS      &kp EQUAL               &kp LS(NUBS)             &kp NUMBER_5        &kp MINUS      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp BACKSLASH  &kp ESCAPE
-                                         &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &to 0               &trans         &kp DELETE        &kp LS(NUMBER_0)
+             &kp NUMBER_0  &kp NUMBER_2  &kp UP_ARROW            &kp NUMBER_7             &kp RA(NUMBER_4)    &kp RA(NUMBER_0)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none
+             &kp ESCAPE    &kp LEFT      &kp DOWN                &kp RIGHT                &kp RA(NUMBER_5)    &kp RA(MINUS)     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &none
+&kp LA(F14)  &none         &none         &kp NUMBER_9            &kp SINGLE_QUOTE         &kp NUMBER_5        &kp MINUS         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none  &none
+                                         &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &to 0               &trans            &kp DELETE        &kp LS(NUMBER_0)
             >;
         };
 
         sym_func {
             bindings = <
-          &kp F12  &kp F7  &kp F8        &kp F9        &kp RA(NUMBER_4)    &kp RA(EQUAL)  &kp LS(SINGLE_QUOTE)   &kp NUMBER_1      &kp RA(NUMBER_0)             &kp RA(NUMBER_3)
-          &kp F11  &kp F4  &kp F5        &kp F6        &kp RA(NUMBER_5)    &kp RA(MINUS)  &mt NUMBER_8 NUMBER_6  &kp RA(NUMBER_6)  &mt RA(NUMBER_8) LS(PERIOD)  &kp RIGHT_BRACKET
-&kp APOS  &kp F10  &kp F1  &kp F2        &kp F3        &kp NUMBER_5        &kp MINUS      &mt NUMBER_3 NUMBER_4  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)             &kp LEFT_BRACKET   &kp ESCAPE
-                           &kp NUMBER_0  &kp NUMBER_9  &to 0               &trans         &trans                 &trans
+          &kp F12  &kp F7  &kp F8  &kp F9  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &lp RA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1       &lp RIGHT_BRACKET RA(NUMBER_3)  &none
+          &kp F11  &kp F4  &kp F5  &kp F6  &kp RA(NUMBER_5)    &kp RA(MINUS)  &lp NUMBER_8 NUMBER_6              &lp LEFT_BRACKET RA(NUMBER_7)   &lp RA(NUMBER_8) LS(PERIOD)     &kp RA(NUMBER_2)
+&kp APOS  &kp F10  &kp F1  &kp F2  &kp F3  &kp NUMBER_5        &kp MINUS      &lp NUMBER_3 NUMBER_4              &lp RA(BACKSLASH) LS(NUMBER_0)  &lp LS(NUBS) NUBS               &none             &kp ESCAPE
+                           &none   &none   &to 0               &trans         &none                              &none
             >;
         };
     };

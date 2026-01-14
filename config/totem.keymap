@@ -32,8 +32,8 @@
         base {
             bindings = <
          &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U          &kp I              &kp O            &kp P
-         &lp LEFT_ALT A  &lp LEFT_GUI S  &lp LEFT_SHIFT D  &lp LCTRL F  &kp G    &kp H  &lp RCTRL J    &lp RIGHT_SHIFT K  &lp RIGHT_GUI L  &lp RIGHT_ALT SEMI
-&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp N  &kp M          &kp COMMA          &kp DOT          &kp SLASH           &kp ENTER
+         &lp LEFT_ALT A  &lp LEFT_GUI S  &lp LEFT_SHIFT D  &lp LCTRL F  &kp G    &kp H  &lp RCTRL J    &lp RIGHT_SHIFT K  &lp RIGHT_GUI L  &lp LEFT_ALT SEMI
+&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp N  &kp M          &kp COMMA          &kp DOT          &kp SLASH          &kp ENTER
                                          &kp LEFT_CONTROL  &kp SPACE    &mo 1    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
@@ -49,9 +49,9 @@
 
         sym_func {
             bindings = <
-          &kp F12  &kp F7  &kp F8  &kp F9  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &lp RA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1       &lp RIGHT_BRACKET RA(NUMBER_3)  &none
-          &kp F11  &kp F4  &kp F5  &kp F6  &kp RA(NUMBER_5)    &kp RA(MINUS)  &lp NUMBER_8 NUMBER_6              &lp LEFT_BRACKET RA(NUMBER_7)   &lp RA(NUMBER_8) LS(PERIOD)     &kp RA(NUMBER_2)
-&kp APOS  &kp F10  &kp F1  &kp F2  &kp F3  &kp NUMBER_5        &kp MINUS      &lp NUMBER_3 NUMBER_4              &lp RA(BACKSLASH) LS(NUMBER_0)  &lp LS(NUBS) NUBS               &none             &kp ESCAPE
+          &kp F12  &kp F7  &kp F8  &kp F9  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &lp RA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1      &lp RIGHT_BRACKET RA(NUMBER_3)  &none
+          &kp F11  &kp F4  &kp F5  &kp F6  &kp RA(NUMBER_5)    &kp RA(MINUS)  &lp NUMBER_8 NUMBER_6              &lp LEFT_BRACKET RA(NUMBER_7)  &lp RA(NUMBER_8) LS(PERIOD)     &lp RA(NUMBER_2) EQUAL
+&kp APOS  &kp F10  &kp F1  &kp F2  &kp F3  &kp NUMBER_5        &kp MINUS      &lp NUMBER_3 NUMBER_4              &lp BACKSLASH LS(EQUAL)        &kp NUBS                        &kp LS(NUBS)            &kp ESCAPE
                            &none   &none   &to 0               &trans         &none                              &none
             >;
         };

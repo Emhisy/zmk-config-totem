@@ -40,18 +40,18 @@
 
         nav_num {
             bindings = <
-             &kp NUMBER_0  &kp NUMBER_2  &kp UP_ARROW            &kp NUMBER_7             &kp RA(NUMBER_4)    &kp RA(NUMBER_0)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none
-             &kp ESCAPE    &kp LEFT      &kp DOWN                &kp RIGHT                &kp RA(NUMBER_5)    &kp RA(MINUS)     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &none
-&kp LA(F14)  &none         &none         &kp NUMBER_9            &kp SINGLE_QUOTE         &kp NUMBER_5        &kp MINUS         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none  &none
+             &kp NUMBER_0  &kp NUMBER_2  &kp UP_ARROW            &kp NUMBER_7             &kp RA(NUMBER_4)    &kp RA(NUMBER_0)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
+             &kp ESCAPE    &kp LEFT      &kp DOWN                &kp RIGHT                &kp RA(NUMBER_5)    &kp RA(MINUS)     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp BACKSLASH
+&kp LA(F14)  &none         &none         &kp NUMBER_9            &kp SINGLE_QUOTE         &kp NUMBER_5        &kp MINUS         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none          &none
                                          &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &to 0               &trans            &kp DELETE        &kp LS(NUMBER_0)
             >;
         };
 
         sym_func {
             bindings = <
-          &kp F12  &kp F7  &kp F8  &kp F9  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &lp RA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1      &lp RIGHT_BRACKET RA(NUMBER_3)  &none
-          &kp F11  &kp F4  &kp F5  &kp F6  &kp RA(NUMBER_5)    &kp RA(MINUS)  &lp NUMBER_8 NUMBER_6              &lp LEFT_BRACKET RA(NUMBER_7)  &lp RA(NUMBER_8) LS(PERIOD)     &lp RA(NUMBER_2) EQUAL
-&kp APOS  &kp F10  &kp F1  &kp F2  &kp F3  &kp NUMBER_5        &kp MINUS      &lp NUMBER_3 NUMBER_4              &lp BACKSLASH LS(EQUAL)        &kp NUBS                        &kp LS(NUBS)            &kp ESCAPE
+          &kp F12  &kp F7  &kp F8  &kp F9  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &lp RA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1  &lp RIGHT_BRACKET RA(NUMBER_3)  &kp RA(NUMBER_2)
+          &kp F11  &kp F4  &kp F5  &kp F6  &kp RA(NUMBER_5)    &kp RA(MINUS)  &lp NUMBER_8 NUMBER_6              &lp NUMBER_3 NUMBER_4      &kp RA(NUMBER_7)                &kp LEFT_BRACE
+&kp APOS  &kp F10  &kp F1  &kp F2  &kp F3  &kp NUMBER_5        &kp MINUS      &kp NUBS                           &kp EQUAL                  &kp LS(NUBS)                    &kp LS(NUBS)      &kp ESCAPE
                            &none   &none   &to 0               &trans         &none                              &none
             >;
         };

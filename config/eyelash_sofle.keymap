@@ -201,7 +201,7 @@
             bindings = <
 &none       &trans  &trans  &trans   &trans   &trans    &msc SCRL_UP     &trans  &trans                             &trans                     &trans                          &trans            &trans
 &trans      &kp F2  &kp F5  &kp F10  &kp F12  &trans    &msc SCRL_DOWN   &trans  &lp LA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1  &lp RIGHT_BRACKET RA(NUMBER_3)  &kp RA(NUMBER_2)  &trans
-&trans      &trans  &trans  &trans   &trans   &trans    &msc SCRL_LEFT   &trans  &kp LEFT                           &kp DOWN                   &kp RIGHT                       &kp LEFT_BRACE    &trans
+&trans      &trans  &trans  &trans   &trans   &trans    &msc SCRL_LEFT   &trans  &lp NUMBER_8 NUMBER_6              &lp NUMBER_3 NUMBER_4      &kp RA(NUMBER_7)                &kp LEFT_BRACE    &trans
 &trans      &trans  &trans  &trans   &trans   &trans    &msc SCRL_RIGHT  &trans  &kp NUBS                           &kp EQUAL                  &kp LS(NUBS)                    &trans            &trans
 &kp C_MUTE  &trans  &trans  &trans   &trans   &to 0     &trans           &trans  &trans                             &trans                     &trans                          &trans
             >;

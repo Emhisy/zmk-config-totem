@@ -165,10 +165,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap_time 350>,
-                <&mo 3 &rgb_ug RGB_ON>,
-                <&macro_tap_time 10>,
-                <&kp W>;
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_press>,
+                <&mo 3>,
+                <&macro_release>,
+                <&rgb_ug RGB_OFF>;
 
             label = "TL1_RGB";
         };
@@ -176,7 +178,7 @@
         gaming: h-to2-rb-on_t-v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4 &rgb_ug RGB_OFF>;
+            bindings = <&to 4 &rgb_ug RGB_ON>;
             label = "NEW_MACRO";
         };
 

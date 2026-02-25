@@ -160,7 +160,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+6
   - Sft+"
-  - '2'
+  - AltGr+2
   - {t: '=', s: +}
   - {t: Sft+=, s: Sft++}
   - $$mdi:pan-left$$
@@ -236,7 +236,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&hmouse_tw'
   - Ctl+X
   - Ctl+C
   - Ctl+V

@@ -168,7 +168,7 @@
                 <&macro_tap>,
                 <&kp W>,
                 <&macro_press>,
-                <&to 3 &rgb_ug RGB_ON>,
+                <&mo 3 &rgb_ug RGB_ON>,
                 <&macro_release>,
                 <&to 0 &rgb_ug RGB_OFF>;
 
@@ -226,11 +226,11 @@
 
         symbole {
             bindings = <
-&trans      &trans            &trans                 &trans         &trans             &trans              &msc SCRL_UP     &trans        &trans        &trans        &trans            &trans          &trans
-&trans      &kp RA(NUMBER_8)  &kp LEFT_BRACKET       &kp BACKSLASH  &kp RIGHT_BRACKET  &kp RA(NUMBER_3)    &msc SCRL_DOWN   &trans        &kp NUMBER_3  &kp NUMBER_4  &kp RA(NUMBER_7)  &kp LS(PERIOD)  &trans
-&trans      &kp RA(NUMBER_6)  &kp LS(DOUBLE_QUOTES)  &kp NUMBER_2   &kp EQUAL          &kp LS(EQUAL)       &msc SCRL_LEFT   &kp NUMBER_6  &kp NUMBER_5  &kp MINUS     &kp RA(NUMBER_4)  &kp RA(EQUAL)   &trans
-&trans      &trans            &trans                 &trans         &kp NUMBER_1       &kp RA(NUMBER_2)    &msc SCRL_RIGHT  &kp NUMBER_8  &kp NUBS      &kp LS(NUBS)  &kp RA(NUMBER_5)  &kp RA(MINUS)   &trans
-&kp C_MUTE  &trans            &trans                 &trans         &trans             &to 0               &trans           &trans        &trans        &trans        &trans            &trans
+&trans      &trans            &trans                 &trans            &trans             &trans              &msc SCRL_UP     &trans        &trans        &trans        &trans            &trans          &trans
+&trans      &kp RA(NUMBER_8)  &kp LEFT_BRACKET       &kp BACKSLASH     &kp RIGHT_BRACKET  &kp RA(NUMBER_3)    &msc SCRL_DOWN   &trans        &kp NUMBER_3  &kp NUMBER_4  &kp RA(NUMBER_7)  &kp LS(PERIOD)  &trans
+&trans      &kp RA(NUMBER_6)  &kp LS(DOUBLE_QUOTES)  &kp RA(NUMBER_2)  &kp EQUAL          &kp LS(EQUAL)       &msc SCRL_LEFT   &kp NUMBER_6  &kp NUMBER_5  &kp MINUS     &kp RA(NUMBER_4)  &kp RA(EQUAL)   &trans
+&trans      &trans            &trans                 &trans            &kp NUMBER_1       &kp RA(NUMBER_2)    &msc SCRL_RIGHT  &kp NUMBER_8  &kp NUBS      &kp LS(NUBS)  &kp RA(NUMBER_5)  &kp RA(MINUS)   &trans
+&kp C_MUTE  &trans            &trans                 &trans            &trans             &to 0               &trans           &trans        &trans        &trans        &trans            &trans
             >;
 
             display-name = "symbole";
@@ -241,11 +241,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans          &trans            &trans           &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &msc SCRL_LEFT  &trans            &msc SCRL_RIGHT  &msc SCRL_UP      &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &mkp RCLK       &mkp MCLK         &mkp LCLK        &msc SCRL_DOWN    &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &kp LC(X)       &kp LC(C)         &kp LC(V)        &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans          &kp LEFT_CONTROL  &trans           &trans            &trans  &trans  &trans          &kp LEFT_SHIFT  &trans           &trans
+&trans  &trans      &trans          &trans            &trans           &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans      &msc SCRL_LEFT  &trans            &msc SCRL_RIGHT  &msc SCRL_UP      &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans      &mkp RCLK       &mkp MCLK         &mkp LCLK        &msc SCRL_DOWN    &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &hmouse_tw  &kp LC(X)       &kp LC(C)         &kp LC(V)        &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans      &trans          &kp LEFT_CONTROL  &trans           &trans            &trans  &trans  &trans          &kp LEFT_SHIFT  &trans           &trans
             >;
 
             label = "mouse";

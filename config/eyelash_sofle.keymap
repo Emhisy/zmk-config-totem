@@ -168,9 +168,9 @@
                 <&macro_tap>,
                 <&kp W>,
                 <&macro_press>,
-                <&mo 3>,
+                <&to 3 &rgb_ug RGB_ON>,
                 <&macro_release>,
-                <&rgb_ug RGB_OFF>;
+                <&to 0 &rgb_ug RGB_OFF>;
 
             label = "TL1_RGB";
         };
@@ -247,6 +247,8 @@
 &trans  &trans  &kp LC(X)       &kp LC(C)         &kp LC(V)        &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &trans  &trans          &kp LEFT_CONTROL  &trans           &trans            &trans  &trans  &trans          &kp LEFT_SHIFT  &trans           &trans
             >;
+
+            label = "mouse";
         };
 
         gaming {
@@ -257,6 +259,8 @@
 &kp LSHFT  &kp Z         &kp X         &kp C      &kp V      &kp B     &trans       &kp N   &kp M     &kp COMMA  &kp PERIOD  &kp SLASH      &kp RET
 &trans     &trans        &kp LALT      &kp LCTRL  &kp SPACE  &mo 3     &trans       &trans  &kp BSPC  &kp LSHFT  &trans      &trans
             >;
+
+            label = "gaming";
         };
     };
 

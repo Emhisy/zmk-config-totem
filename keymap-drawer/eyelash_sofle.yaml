@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
+  - Alt+F14
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-down-bold$$
+  - Alt+F15
   - Y
   - U
   - I
@@ -58,21 +58,21 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
-  - lower
+  - number
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - upper
+  - symbole
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  lower:
+  number:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+F14
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -85,7 +85,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - '7'
   - PgUp
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+F15
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+8, s: Sft+*}
@@ -130,7 +130,7 @@ layers:
   - {t: Sft+0, s: Sft+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  upper:
+  symbole:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -267,7 +267,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+F14
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -280,7 +280,7 @@ layers:
   - E
   - R
   - T
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+F15
   - Y
   - U
   - I

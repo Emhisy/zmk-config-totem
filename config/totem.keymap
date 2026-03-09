@@ -12,6 +12,9 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
+&mmv { time-to-max-speed-ms = <900>; };
 
 / {
     behaviors {
@@ -31,38 +34,40 @@
 
         base {
             bindings = <
-         &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U          &kp I              &kp O            &kp P
-         &lp LEFT_ALT A  &lp LEFT_GUI S  &lp LEFT_SHIFT D  &lp LCTRL F  &kp G    &kp H  &lp RCTRL J    &lp RIGHT_SHIFT K  &lp RIGHT_GUI L  &lp LEFT_ALT SEMI
-&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp N  &kp M          &kp COMMA          &kp DOT          &kp SLASH          &kp ENTER
+         &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U          &kp I                  &kp O             &kp P
+         &kp A           &kp S           &kp D             &kp F        &kp G    &kp H  &kp J          &kp K                  &kp L             &kp SEMI
+&kp TAB  &lp LEFT_GUI Z  &lp LEFT_ALT X  &lp LEFT_SHIFT C  &lp LCTRL V  &kp B    &kp N  &lp RCTRL M    &lp RIGHT_SHIFT COMMA  &lp LEFT_ALT DOT  &lp RIGHT_GUI SLASH  &kp ENTER
                                          &kp LEFT_CONTROL  &kp SPACE    &mo 1    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
         nav_num {
             bindings = <
-             &kp NUMBER_0  &kp NUMBER_2  &kp UP_ARROW            &kp NUMBER_7             &kp RA(NUMBER_4)    &kp RA(NUMBER_0)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
-             &kp ESCAPE    &kp LEFT      &kp DOWN                &kp RIGHT                &kp RA(NUMBER_5)    &kp RA(MINUS)     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp BACKSLASH
-&kp LA(F14)  &none         &none         &kp NUMBER_9            &kp SINGLE_QUOTE         &kp NUMBER_5        &kp MINUS         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none          &none
-                                         &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &to 0               &trans            &kp DELETE        &kp LS(NUMBER_0)
+             &kp NUMBER_0  &kp NUMBER_2  &kp UP_ARROW  &kp NUMBER_7  &none    &none   &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none
+             &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &none    &none   &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &none
+&kp LA(F14)  &none         &none         &none         &none         &none    &none   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none  &none
+                                         &none         &none         &to 0    &trans  &kp DELETE        &kp LS(NUMBER_0)
             >;
         };
 
         sym_func {
             bindings = <
-          &kp F12  &kp F7  &kp F8  &kp F9  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &lp RA(NUMBER_0) LS(SINGLE_QUOTE)  &lp RA(NUMBER_6) NUMBER_1  &lp RIGHT_BRACKET RA(NUMBER_3)  &kp RA(NUMBER_2)
-          &kp F11  &kp F4  &kp F5  &kp F6  &kp RA(NUMBER_5)    &kp RA(MINUS)  &lp NUMBER_8 NUMBER_6              &lp NUMBER_3 NUMBER_4      &kp RA(NUMBER_7)                &kp LEFT_BRACE
-&kp APOS  &kp F10  &kp F1  &kp F2  &kp F3  &kp NUMBER_5        &kp MINUS      &kp NUBS                           &kp EQUAL                  &kp LS(NUBS)                    &kp LS(NUBS)      &kp ESCAPE
-                           &none   &none   &to 0               &trans         &none                              &none
+       &kp RA(NUMBER_8)  &kp LEFT_BRACKET       &kp BACKSLASH     &kp RIGHT_BRACKET  &kp RA(NUMBER_3)    &none         &kp NUMBER_3  &kp NUMBER_4  &lp RIGHT_BRACKET RA(NUMBER_7)  &kp LS(PERIOD)
+       &kp RA(NUMBER_6)  &kp LS(DOUBLE_QUOTES)  &kp RA(NUMBER_2)  &kp EQUAL          &kp LS(EQUAL)       &kp NUMBER_6  &kp NUMBER_5  &kp MINUS     &kp RA(NUMBER_7)                &kp RA(EQUAL)
+&none  &none             &none                  &none             &kp NUMBER_1       &kp RA(NUMBER_2)    &kp NUMBER_8  &kp NUBS      &kp LS(NUBS)  &kp RA(NUMBER_5)                &kp RA(MINUS)   &none
+                                                &none             &none              &to 0               &trans        &none         &none
+            >;
+        };
+
+        mouse {
+            bindings = <
+       &none  &msc SCRL_LEFT  &none      &msc SCRL_RIGHT  &msc SCRL_UP      &none  &none           &mmv MOVE_UP    &none            &none
+       &none  &mkp RCLK       &mkp MCLK  &mkp LCLK        &msc SCRL_DOWN    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none  &none  &kp LC(X)       &kp LC(C)  &kp LC(V)        &none             &none  &none           &none           &none            &none  &none
+                              &kp LCTRL  &none            &none             &none  &none           &kp LEFT_SHIFT
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        device {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };

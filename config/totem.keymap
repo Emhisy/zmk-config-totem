@@ -36,7 +36,7 @@
          &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U          &kp I             &kp O           &kp P
          &lp LEFT_WIN A  &lp LEFT_ALT S  &lp LEFT_SHIFT D  &lp LCTRL F  &kp G    &kp H  &lp LCTRL J    &lp LEFT_SHIFT K  &lp LEFT_ALT L  &lp LEFT_WIN SEMI
 &kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp N  &kp M          &kp COMMA         &kp PERIOD      &kp SLASH          &kp ENTER
-                                         &kp LEFT_CONTROL  &kp SPACE    &mo 0    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
+                                         &kp LEFT_CONTROL  &kp SPACE    &mo 3    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
